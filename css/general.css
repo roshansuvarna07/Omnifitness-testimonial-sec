@@ -1,0 +1,154 @@
+/*
+---01 TYPOGRAPHY
+
+-FONT SIZE SYSTEM (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 
+/ 62 / 74 / 86 / 98
+
+-FONT WEIGHT:
+Default:
+Medium:
+Semi-bold:
+Bold:
+
+-LINE HEIGHTS:
+Default: 1
+Small: 
+Medium:
+Paragraph default: 
+Large:
+
+letter spacing
+
+
+---02 COLORS
+
+-Primary:
+-Tints: 
+
+-Shades:
+
+-Accents:
+-Greys:
+#555
+#333
+
+--- 05 SHADOWS
+
+
+--- 06 BORDER RADIUS
+
+--- 07 WHITE SPACE
+
+-SPACING SYSTEM (px):
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+
+html {
+  /*Default  1 rem = 16px;     */
+
+  /* Change 16px to 10px */
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 1;
+  font-weight: 400;
+  color: #fff;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: rgba(16, 16, 16, 0.91);
+}
+
+/* ***************************** */
+/* GENERAL REUSABLE COMPONENT */
+/* ***************************** */
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+/* ========BACKGROUND IMAGE============ */
+
+.bg-img {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* ========HEADINGS============ */
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #fff;
+}
+
+.heading-primary {
+  font-size: 6.7rem;
+  line-height: 1.1;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 5.2rem;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 6.4rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+  color: #e67e22;
+}
+
+/* ========BUTTONS============= */
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  text-decoration: none;
+  border-radius: 9px;
+  font-weight: 600;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+
+  background-color: #e67e22;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #cf711f;
+  color: #fff;
+}
